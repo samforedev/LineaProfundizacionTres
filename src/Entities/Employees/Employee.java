@@ -13,6 +13,9 @@ public class Employee extends Person {
     public JobAreas jobAreas;
     public JobCharge jobCharge;
 
+    public Employee() {
+        super();
+    }
 
     public Employee(String name, String DNINumber, String lastName, Date birthDate, String address, String city, String employeeCode, double overtime, Date registerDate, JobAreas jobAreas, JobCharge jobCharge) {
         super(name, DNINumber, lastName, birthDate, address, city);

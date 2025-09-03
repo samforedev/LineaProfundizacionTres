@@ -3,31 +3,32 @@ package Entities;
 import java.util.Date;
 
 public class Person {
-    public String DNINumber;
-    public String Name;
-    public String LastName;
-    public Date BirthDate;
-    public String Address;
-    public String City;
+    public String dniNumber;
+    public String name;
+    public String lastName;
+    public Date birthDate;
+    public String address;
+    public String city;
 
+    public Person() {}
     public Person(String name, String dniNumber, String lastName, Date birthDate, String address, String city) {
-        Name = name;
-        DNINumber = dniNumber;
-        LastName = lastName;
-        BirthDate = birthDate;
-        Address = address;
-        City = city;
+        this.name = name;
+        this.dniNumber = dniNumber;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+        this.address = address;
+        this.city = city;
     }
 
     @Override
     public String toString() {
         return "Person{" +
-                "DNINumber='" + DNINumber + '\'' +
-                ", Name='" + Name + '\'' +
-                ", LastName='" + LastName + '\'' +
-                ", BirthDate=" + BirthDate +
-                ", Address='" + Address + '\'' +
-                ", City='" + City + '\'' +
+                "DNINumber='" + dniNumber + '\'' +
+                ", Name='" + name + '\'' +
+                ", LastName='" + lastName + '\'' +
+                ", BirthDate=" + birthDate +
+                ", Address='" + address + '\'' +
+                ", City='" + city + '\'' +
                 '}';
     }
 }

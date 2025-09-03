@@ -4,7 +4,6 @@ import Enmus.*;
 import Entities.Doctor;
 import Entities.Employees.Employee;
 import Entities.Patient;
-import Entities.Person;
 import Entities.dto.Medications;
 
 import java.util.ArrayList;
@@ -45,7 +44,7 @@ public class CreatePerson {
 
     public static Doctor createDoctor(){
         return new Doctor(
-                "Pedro",
+                "Doc Bobadilla",
                 "1234566",
                 "Pascal",
                 new Date(),
