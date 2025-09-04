@@ -57,7 +57,7 @@ En esta seccion realizaremos un repaso de los diferentes comandos que tiene **Gi
 ![Ejemplo](resources/5.png)
 
 
-### Inicio basico del repositorio
+### Manejo basico del repositorio
 1. Iniciar un nuevo repositorio
 ```bash
     git init
@@ -74,6 +74,55 @@ y es lo mas comun, por **HTTP**.
 
 ![Ejemplo](resources/7.png)
 
+3. Ver el estado del proyecto
+```bash
+  git status
+```
+Con git status podemos ver la rama actual, y los archivos que estan en:
+* staging area
+* modificados pero no en staging
+* no rastreados
+
+![Ejemplo](resources/8.png)
+
+4. Agregar todos cambios al staging area
+```bash
+  git add .
+```
+Con este comando agregamos todos los cambios rastreados al staging area  
+el area lista para el commit, el `.` al final del comando significa que agregara todo  
+pero se puede aclarar que cambios queremos agregar uno por uno.
+
+![Ejemplo](resources/9.png)
+
+![Ejemplo](resources/10.png)
+
+5. Realizar el commit
+```bash
+  git commit -m ''
+```
+Con este comando guardamos los cambios que estan en staging area al historial del proyecto
+![Ejemplo](resources/11.png)
+
+### Interaccion con el repositorio remoto
+1. Subir los cambios al repositorio remoto
+```bash
+  git push origin master
+```
+Con este comando subimos los cambios del historial local al repositorio remoto, `origin` es el nombre  
+por defecto que Git le asigna al repositorio, `master` hace referencia a la rama remota.  
+
+![Ejemplo](resources/13.png)
+2. Obtener los cambios del repositorio remoto
+```bash
+  git pull origin master
+```
+Con este comando bajamos los cambios del historial remoto al repositorio local, es lo mismo que el  
+comando anterior pero a la inversa.  
+
+![Ejemplo](resources/14.png)
+
+### Manejo de ramas
 
 
 ## Conclusiones
